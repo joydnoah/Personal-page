@@ -5,6 +5,7 @@
   "author": "Sebastian",
   "private": true,
   "scripts": {
+    "heroku-postbuild": "npm run build",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "node server.js",
     "build": "node build/build.js"
