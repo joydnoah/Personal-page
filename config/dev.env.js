@@ -4,5 +4,5 @@ const prodEnv = require('./prod.env')
 
 module.exports = merge(prodEnv, {
   NODE_ENV: '"development"',
-  TEST: JSON.stringify(process.env.API_URL)
+  TEST: process.env.TEST
 })
