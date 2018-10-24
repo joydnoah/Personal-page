@@ -11,6 +11,15 @@ export default {
     return {
       msg: 'Sebastian dev page in progress'
     }
+  },
+  methods: {
+    test () {
+      console.log('test')
+      console.log(process.env.TEST)
+    }
+  },
+  mounted () {
+    this.test()
   }
 }
 </script>
