@@ -9,7 +9,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Sebastian dev page in progress!'
+      msg: 'Sebastian dev page in progress!!'
     }
   },
   methods: {
