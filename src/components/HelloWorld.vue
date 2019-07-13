@@ -1,6 +1,9 @@
 <template>
   <div class="base-content">
     {{ msg }}
+    <div>
+      <button @click="go_to('randomizer')">TFT randomizer!</button>
+    </div>
   </div>
 </template>
 
@@ -13,13 +16,10 @@ export default {
     }
   },
   methods: {
-    test () {
-      console.log('test')
-      console.log(process.env.TEST)
+    go_to (route) {
+      console.log(route)
+      window.location.href = route
     }
-  },
-  mounted () {
-    this.test()
   }
 }
 </script>
